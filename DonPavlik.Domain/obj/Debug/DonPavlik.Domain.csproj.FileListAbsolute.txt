@@ -1,0 +1,5 @@
+C:\Projects\DonPavlik.Domain\DonPavlik.Domain\bin\Debug\DonPavlik.Domain.dll
+C:\Projects\DonPavlik.Domain\DonPavlik.Domain\bin\Debug\DonPavlik.Domain.pdb
+C:\Projects\DonPavlik.Domain\DonPavlik.Domain\obj\Debug\DonPavlik.Domain.csprojResolveAssemblyReference.cache
+C:\Projects\DonPavlik.Domain\DonPavlik.Domain\obj\Debug\DonPavlik.Domain.dll
+C:\Projects\DonPavlik.Domain\DonPavlik.Domain\obj\Debug\DonPavlik.Domain.pdb
