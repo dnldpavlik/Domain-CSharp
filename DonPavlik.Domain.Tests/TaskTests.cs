@@ -112,7 +112,6 @@
         {
             this.InitializeTestTask();
             this._testTask.Start();
-            System.Threading.Thread.Sleep(1);
             this._testTask.Pause();
             TimeSpan oneMilisecond = new TimeSpan(0, 0, 0, 0, 1);
 
@@ -130,12 +129,10 @@
         {
             this.InitializeTestTask();
             this._testTask.Start();
-            System.Threading.Thread.Sleep(1);
             this._testTask.Pause();
             TimeSpan timeTaken = this._testTask.TimeTaken;
 
             this._testTask.Start();
-            System.Threading.Thread.Sleep(1);
             this._testTask.Pause();
 
             Assert.True(timeTaken < this._testTask.TimeTaken);
@@ -161,7 +158,6 @@
         {
             this.InitializeTestTask();
             this._testTask.Start();
-            System.Threading.Thread.Sleep(1);
             this._testTask.Complete();
 
             TimeSpan oneMilisecond = new TimeSpan(0, 0, 0, 0, 1);

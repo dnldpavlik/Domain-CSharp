@@ -87,6 +87,10 @@
 
         /// <summary>
         /// Logs the time taken from the start time to current time to time taken.
+        /// If time taken is less than a second, will just add 1 second to the time
+        /// taken, as this is not something humanly possible to do, and would only 
+        /// occur if a machine was starting/pausing/completing a task right after 
+        /// another.
         /// </summary>
         private void LogTime()
         {
@@ -94,6 +98,12 @@
             {
                 TimeSpan takenTime = 
                     DateTime.Now - this._startTime;
+                
+                if (takenTime.Seconds <= 0)
+                {
+                    takenTime = new TimeSpan(0, 0, 1);
+                }
+
                 this.TimeTaken += takenTime;
             }
         }
